@@ -1,0 +1,24 @@
+#%Module -*- tcl -*-
+#
+# FastQC 0.11.4
+#
+# by Tiziano Gallo Cassarino, 2015
+# 
+
+proc ModulesHelp { } {
+
+    puts stderr "This module adds the FastQC 0.11.4 package to your environment."
+    puts stderr ""
+
+}
+
+module-whatis "Adds FastQC 0.11.4 to your environment."
+
+# Add binary to PATH
+prereq gcc-libs/4.9.2
+
+conflict fastqc
+
+set root 			/shared/ucl/apps/fastqc/0.11.4
+prepend-path PATH      		$root
+

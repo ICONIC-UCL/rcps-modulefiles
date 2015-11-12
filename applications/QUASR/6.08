@@ -1,0 +1,26 @@
+#%Module -*- tcl -*-
+#
+# QUASR 6.08
+#
+# by Tiziano Gallo Cassarino, 2015
+# 
+
+proc ModulesHelp { } {
+
+    puts stderr "This module adds the QUASR 6.08 package to your environment."
+    puts stderr ""
+
+}
+
+module-whatis "Adds QUASR 6.08 to your environment."
+
+# Add binary to PATH
+prereq gcc-libs/4.9.2
+
+conflict quasr
+
+set root 			/shared/ucl/apps/QUASR/6.08
+prepend-path PATH		$root
+prepend-path PYTHONPATH		$root
+prepend-path PYTHONPATH		$root/extras
+prepend-path PYTHONPATH		$root/modules

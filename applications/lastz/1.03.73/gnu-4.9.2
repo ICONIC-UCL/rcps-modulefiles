@@ -1,0 +1,22 @@
+#%Module -*- tcl -*-
+#
+# LASTZ 1.03.73
+#
+# by Tiziano Gallo Cassarino, 2015
+
+proc ModulesHelp { } {
+
+    puts stderr "This module adds the LASTZ binaries to your environment."
+    puts stderr ""
+}
+
+module-whatis "Adds LASTZ to your environment."
+
+# Add binaries to PATH
+prereq gcc-libs/4.9.2
+
+conflict lastz
+
+set root            /shared/ucl/apps/lastz/1.03.73/gnu-4.9.2
+prepend-path PATH   $root/bin
+
