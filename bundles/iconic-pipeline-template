@@ -1,0 +1,19 @@
+#%Module -*- tcl -*-
+#
+# Modules for ICONIC Pipeline software
+#
+# by Tiziano Gallo Cassarino, 2015
+#
+
+proc ModulesHelp { } {
+
+  puts stderr "This module adds ICONIC Pipeline modules to your environment."
+  puts stderr ""
+}
+
+module-whatis "Adds ICONIC Pipeline modules to your environment."
+
+
+prepend-path MODULEPATH /shared/ucl/depts/farr/modulefiles
+
+
