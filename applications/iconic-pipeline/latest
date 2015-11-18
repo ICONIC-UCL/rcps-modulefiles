@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 #
-# FastQC 0.11.4
+# ICONIC pipeline scripts
 #
 # by Tiziano Gallo Cassarino, 2015
 # 
@@ -13,6 +13,6 @@ proc ModulesHelp { } {
 module-whatis "Adds ICONIC pipeline scripts to your environment."
 
 # Add scripts to PYTHONPATH
-prepend-path PYTHONPATH /shared/ucl/depts/farr/pipeline/pipeline
-prepend-path PATH /shared/ucl/depts/farr/pipeline/pipeline
+prepend-path PYTHONPATH /shared/ucl/apps/pipeline/pipeline
+prepend-path PATH /shared/ucl/apps/pipeline/pipeline
 

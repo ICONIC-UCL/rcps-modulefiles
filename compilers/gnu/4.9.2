@@ -1,0 +1,25 @@
+#%Module -*- tcl -*-
+##
+## modulefile
+##
+## by Tiziano Gallo Cassarino, 2015
+
+proc ModulesHelp { } {
+
+  puts stderr "\tAdds GCC 4.9.2 compilers to your environment variables,"
+}
+
+module-whatis "adds GCC 4.9.2 compilers to your environment variables"
+
+conflict compilers
+prereq gcc-libs/4.9.2
+
+prepend-path      MANPATH /shared/ucl/depts/farr/apps/gcc/4.9.2/share/man
+# for gcj
+prepend-path	  PATH /shared/ucl/depts/farr/apps/ecj/4.9/gnu-4.9.2
+setenv CC gcc
+setenv CXX g++
+setenv FC gfortran
+setenv F90 gfortran
+setenv F77 gfortran
+setenv COMPILER_TAG gnu-4.9.2

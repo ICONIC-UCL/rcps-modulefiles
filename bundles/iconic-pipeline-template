@@ -14,6 +14,3 @@ proc ModulesHelp { } {
 module-whatis "Adds ICONIC Pipeline modules to your environment."
 
 
-prepend-path MODULEPATH /shared/ucl/depts/farr/modulefiles
-
-
