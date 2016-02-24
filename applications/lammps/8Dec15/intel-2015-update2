@@ -1,12 +1,12 @@
 #%Module -*- tcl -*-
 ##
-## modulefile
+## LAMMPS 8Dec15 with additional packages kspace, replica, rigid, class2
 ##
-## Built by O.K. on Legion on 2015-05-01
+## Built Jan 2016
 
 proc ModulesHelp { } {
 
-    puts stderr "This module adds the LAMMPS 10Feb15 package to your environment."
+    puts stderr "This module adds the LAMMPS 8Dec15 package to your environment."
     puts stderr ""
     puts stderr "LAMMPS is a GPL molecular dynamics code which shows exceptional"
     puts stderr "scaling on a wide variety of machines.  This version has been "
@@ -17,7 +17,7 @@ proc ModulesHelp { } {
     puts stderr ""
 }
 
-module-whatis "Adds LAMMPS 10Feb15 to your environment. Binary is lmp_default."
+module-whatis "Adds LAMMPS 8Dec15 to your environment. Binary is lmp_default."
 
 
 conflict lammps
@@ -25,7 +25,7 @@ prereq gcc-libs/4.9.2
 prereq compilers/intel/2015/update2
 prereq mpi/intel/2015/update3/intel
 
-set              root              /shared/ucl/apps/lammps/10Feb15/intel-2015-update2/lammps-10Feb15
+set              root              /shared/ucl/apps/lammps/8Dec15/intel-2015-update2/lammps-8Dec15
 
 prepend-path     PATH              $root/bin
 prepend-path     LD_RUN_PATH       $root/lib64
