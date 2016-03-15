@@ -25,5 +25,6 @@ prepend-path     CPATH             $root/include
 prepend-path     INCLUDE_PATH      $root/include
 setenv           BLAS_TAG          openblas
 setenv           OPENBLASROOT      $root
+setenv		 BLAS              $root/lib
 
 prepend-path CMAKE_PREFIX_PATH  $root
