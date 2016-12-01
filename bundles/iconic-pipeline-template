@@ -13,7 +13,6 @@ proc ModulesHelp { } {
 
 module-whatis "Adds ICONIC Pipeline modules to your environment."
 
-module use /shared/ucl/depts/farr/modulefiles
 module use /shared/ucl/depts/farr/modulefiles/applications
 module use /shared/ucl/depts/farr/modulefiles/development
 module use /shared/ucl/depts/farr/modulefiles/libraries
