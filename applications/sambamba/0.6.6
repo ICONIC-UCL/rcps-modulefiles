@@ -1,0 +1,22 @@
+#%Module -*- tcl -*-
+#
+# Sambamba 0.6.6
+#
+# by Tiziano Gallo Cassarino, 2015
+# 
+
+proc ModulesHelp { } {
+
+    puts stderr "This module adds the Sambamba 0.6.6 software to your environment."
+    puts stderr ""
+
+}
+
+module-whatis "Adds Sambamba 0.6.6 to your environment."
+
+# Add binary to PATH
+conflict sambamba
+
+set root 			/shared/ucl/apps/sambamba/0.6.6
+prepend-path PATH      		$root
+
